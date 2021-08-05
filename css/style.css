@@ -12,6 +12,14 @@ a {
     text-decoration: none;
 }
 
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 #daohanglan,
 #banner,
 #shiming,
@@ -77,4 +85,83 @@ a {
 }
 #table_ a:hover{
     color:rgb(52,168,112);
+}
+
+#daohanglan{
+    height: 72px;
+    position: fixed;    
+    background-color: transparent;
+}
+
+#daohanglan .container{
+    width: 1200px;
+    height: 72px;
+    /* height: 400px; */
+    margin: 0px auto;
+    position: relative;
+    background-color: gray;
+}
+
+#daohanglan .dhllogo{
+    width:140px;
+    height: 72px;
+    line-height: 72px;
+}
+
+#daohanglan img{
+    margin: 15px;
+}
+
+#daohanglan .before .dhllist{
+    width: 700px;
+    height: 72px;
+    line-height: 72px;
+}
+
+
+#daohanglan .before .sp{
+    width: 98px;
+    text-align: center;
+}
+
+
+#daohanglan .before li{
+    font-weight: bold;
+    display: inline-block;
+    margin: 0px 0px 0 60px;
+}
+#daohanglan .before li{
+    color: white;
+}
+#daohanglan .before{
+    background-color: transparent;
+    display: ;
+}
+
+
+#daohanglan .after{
+    background-color: white;
+    display: none;
+}
+#daohanglan .after .dhllist{
+    width: 700px;
+}
+
+#daohanglan .after li{
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 0px 0px 0 60px;
+}
+
+#daohanglan .after dt{
+    font-weight: bold;
+    margin: 20px 0 40px;
+}
+
+#daohanglan .after dd{
+    margin: 20px 0;
+    font-size: 14px;
+    color: rgb(116,116,116);
 }
