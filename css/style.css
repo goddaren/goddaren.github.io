@@ -12,6 +12,14 @@ a {
     text-decoration: none;
 }
 
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 #daohanglan,
 #banner,
 #shiming,
@@ -32,4 +40,47 @@ a {
     height: 100px;
     border: 1px solid red;
     margin:0px auto;
+}
+
+#daohanglan{
+    width: 1200px;
+    height: 72px;
+    margin: 0px auto;
+    background-color: gray;
+}
+
+#daohanglan .dhllogo{
+    width:140px;
+    height: 72px;
+    line-height: 72px;
+}
+
+#daohanglan img{
+    margin: 15px;
+}
+
+#daohanglan .dhllist{
+    width: 700px;
+    height: 72px;
+    line-height: 72px;
+}
+
+#daohanglan li{
+    font-weight: bold;
+    display: inline-block;
+    margin: 0px 0px 0 60px;
+}
+#daohanglan .before li{
+    color: white;
+
+}
+#daohanglan .before{
+    background-color: transparent;
+    display: none;
+}
+
+
+#daohanglan .after{
+    background-color: white;
+    
 }
