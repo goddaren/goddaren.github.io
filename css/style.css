@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#daohanglan,
+#banner,
+#shiming,
+#jishu,
+#fuwu,
+#fuwuneirong,
+#quyu,
+#quyuditu,
+#zixun,
+#logo,
+#yejiao{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #000;
+}
+.container{
+    width: 1280px;
+    height: 100px;
+    border: 1px solid red;
+    margin:0px auto;
+}
