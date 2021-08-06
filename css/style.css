@@ -87,10 +87,14 @@ a {
     color:rgb(52,168,112);
 }
 
+/* 导航栏样式 */
+
 #daohanglan{
+    width: 100%;
     height: 72px;
     position: fixed;    
     background-color: transparent;
+    z-index: 100;
 }
 
 #daohanglan .container{
@@ -99,7 +103,15 @@ a {
     /* height: 400px; */
     margin: 0px auto;
     position: relative;
-    background-color: gray;
+    /* background-color: gray; */
+}
+
+#daohanglan .bgcontainer{
+    width: 100%;
+    height: 72px;
+    /* height: 400px; */
+    margin: 0px auto;
+    position: relative;
 }
 
 #daohanglan .dhllogo{
@@ -114,54 +126,138 @@ a {
 
 #daohanglan .before .dhllist{
     width: 700px;
-    height: 72px;
-    line-height: 72px;
-}
-
-
-#daohanglan .before .sp{
-    width: 98px;
-    text-align: center;
+    position: relative;
 }
 
 
 #daohanglan .before li{
     font-weight: bold;
-    display: inline-block;
-    margin: 0px 0px 0 60px;
+    width: 120px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: transparent;
 }
 #daohanglan .before li{
     color: white;
 }
 #daohanglan .before{
     background-color: transparent;
-    display: ;
+    display: block;
 }
 
-
 #daohanglan .after{
-    background-color: white;
-    display: none;
+    display:none;
 }
 #daohanglan .after .dhllist{
     width: 700px;
+    color: black;
+    position: relative;
 }
 
 #daohanglan .after li{
     height: 200px;
-    display: inline-block;
-    vertical-align: top;
+    width: 120px;
     text-align: center;
-    margin: 0px 0px 0 60px;
+    margin: 0px 0px 0 0px;
+}
+#daohanglan .containerhover:hover{
+    background-color: white;
+    height: 400px;
+}
+#daohanglan .containerhover{
+    background-color: transparent;
+}
+
+#daohanglan .ddhover:hover{
+    display: block;
+}
+#daohanglan .ddhover{
+    display: none;
+}
+
+
+#daohanglan  .title1{
+    position: absolute;
+    top:3px;
+    left: 0px;
+}
+
+#daohanglan  .title2
+{
+    position: absolute;
+    top:3px;
+    left: 110px;
+}
+#daohanglan  .title3{
+    position: absolute;
+    top:3px;
+    left: 240px;
+}
+#daohanglan .title4{
+    position: absolute;
+    top:3px;
+    left: 380px;
+}
+#daohanglan .title5{
+    position: absolute;
+    top:3px;
+    left: 500px;
 }
 
 #daohanglan .after dt{
     font-weight: bold;
-    margin: 20px 0 40px;
+    margin: 20px 0 5px;
 }
 
 #daohanglan .after dd{
-    margin: 20px 0;
+    margin: 30px 0;
     font-size: 14px;
-    color: rgb(116,116,116);
+    color: black;
+    display: none;
+}
+#daohanglan .after dd:first-child{
+    margin-top: 10px;
+}
+#daohanglan .after .lihover:hover dd{
+    display: block;
+}
+
+#daohanglan .after .lihover dd{
+    display: none;
+}
+
+#daohanglan .after dt a{
+    color: black;
+}
+#daohanglan .after dd a{
+    color: #686564;
+}
+#daohanglan .after dd a:hover{
+    color: #3E3A39;
+}
+
+#daohanglan .after .lihover:hover div{
+    display: block;
+    transform: translateX(17px);
+}
+
+#daohanglan .after .lihover div{
+    visibility: visible;
+    display: block;    
+    transition: all 1s; 
+}
+
+#daohanglan .after li div{
+    visibility: hidden;
+    background-color: #25A266;
+    width: 25px;
+    height: 3px;
+    margin: 20px 0 20px 30px;
+}
+/* 横幅样式 */
+
+#banner .container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
