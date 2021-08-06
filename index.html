@@ -10,65 +10,73 @@
 <body>
     <!-- 安厨导航栏 -->
     <div id="daohanglan">
-        <div class="container">
-            <div class="before">
-                <div class="dhllogo left">
-                    <a href="/"><img src="img/dc50df2f5c26d47315d26cbb837f2c68.png" alt=""></a>
+        <div class="bgcontainer" onmouseleave="dhlbgc()">
+            <div class="container">
+                <div class="before">
+                    <div class="dhllogo left">
+                        <a href="/"><img src="img/dc50df2f5c26d47315d26cbb837f2c68.png" alt=""></a>
+                    </div>
+                    <div class="dhllist right">
+                        <ul  onmouseover="dhlulon()">
+                            <li class="title1">首页</li>
+                            <li class="title2">主营业务</li>
+                            <li class="title3">安厨研究院</li>
+                            <li class="title4">资讯动态</li>
+                            <li class="title5">关于我们</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="dhllist right">
-                    <ul>
-                        <li>首页</li>
-                        <li class="sp">主营业务</li>
-                        <li>安厨研究院</li>
-                        <li>资讯动态</li>
-                        <li>关于我们</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="after">
-                <div class="dhllogo left">
-                    <a href="/"><img src="img/cf93dae9120a6c700b7b7062c75796d9.png" alt=""></a>
-                </div>
-                <div class="dhllist right">
-                    <ul>
-                        <li>
-                            <dl>
-                                <dt>
-                                    首页
-                                </dt> 
-                                <dd></dd>                                
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>主营业务</dt>
-                                <dd>网上农博</dd>
-                                <dd>农业公共服务</dd>
-                                <dd>农业大数据</dd>
-                                <dd>产业园运营服务</dd>
-                            </dl></li>
-                        <li>
-                            <dl>
-                                <dt>安厨研究院</dt>
-                                <dd>模式创新</dd>
-                                <dd>技术突破</dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>资讯动态</dt>
-                                <dd>新闻动态</dd>
-                                <dd>助农扶贫</dd>
-                                <dd>安厨公益</dd>
-                            </dl>
-                        </li>
-                        <li>
-                            <dl>
-                                <dt>关于我们</dt>
-                                <dd></dd>
-                            </dl>
-                        </li>
-                    </ul>
+                <div class="after">
+                    <div class="dhllogo left">
+                        <a href="/"><img src="img/cf93dae9120a6c700b7b7062c75796d9.png" alt=""></a>
+                    </div>
+                    <div class="dhllist right">
+                        <ul>
+                            <li class="title1"  onmouseleave="dhllioff()">
+                                <dl>
+                                    <dt onmouseover="dhldton(0)">
+                                        <a href="#">首页</a>
+                                        <div></div>
+                                    </dt> 
+                                    <dd></dd>                                
+                                </dl>
+                            </li>
+                            <li  class="title2"  onmouseleave="dhllioff()">
+                                    <dl>
+                                        <dt  onmouseover="dhldton(1)"><a href="#">主营业务</a></dt>
+                                        <div></div>
+                                        <dd><a href="#">网上农博</a></dd>
+                                        <dd><a href="#">农业公共服务</a></dd>
+                                        <dd><a href="#">农业大数据</a></dd>
+                                        <dd><a href="#">产业园运营服务</a></dd>
+                                    </dl></li>                                
+
+                            <li  class="title3"  onmouseleave="dhllioff()">
+                                <dl>
+                                    <dt onmouseover="dhldton(2)"><a href="#">安厨研究院</a></dt>
+                                    <div></div>
+                                    <dd><a href="#">模式创新</a></dd>
+                                    <dd><a href="#">技术突破</a></dd>
+                                </dl>
+                            </li>
+                            <li  class="title4"  onmouseleave="dhllioff()">
+                                <dl>
+                                    <dt onmouseover="dhldton(3)"><a href="#">资讯动态</a></dt>
+                                    <div></div>
+                                    <dd><a href="#">新闻动态</a></dd>
+                                    <dd><a href="#">助农扶贫</a></dd>
+                                    <dd><a href="#">安厨公益</a></dd>
+                                </dl>
+                            </li>
+                            <li  class="title5" onmouseleave="dhllioff()">
+                                <dl>
+                                    <dt  onmouseover="dhldton(4)"><a href="#">关于我们</a></dt>
+                                    <div></div>
+                                    <dd></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -224,4 +232,5 @@
         </div>
     </div>
 </body>
+<script src="js/script.js"></script>
 </html>
