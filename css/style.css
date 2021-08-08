@@ -502,13 +502,13 @@ img.tabel__picture2{
 #quyuneirong .quyuleft{
     width: 36%;
     height: 720px;
-
 }
 
 #quyuneirong .quyuleft a{
     color: #8E8E8E;
     height: 180px;
 }
+
 #quyuneirong .quyuleft h3{
     display: inline-block;
     font-size: 30px;
@@ -521,6 +521,11 @@ img.tabel__picture2{
     display: inline-block;
     height: 180px;
 }
+
+#quyuneirong .quyuleft .quyuli1{
+    color: white;
+}
+
 #quyuneirong .quyuleft p{
     display: inline-block;
     margin: 10px 140px 5px 200px;
