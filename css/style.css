@@ -58,14 +58,18 @@ a {
 }
 /* 左表格 */
 #table_ th{
-    font-size: 22px;
+    font-size: 21px;
     padding-top: 8px;
     padding-bottom: 8px;
     text-align:left;
     width: 25%
+    
+}
+p.tabelleft{
+    color:rgb(77,74,73);
 }
 #table_ td{
-    font-size:17px;
+    font-size:16px;
     padding-top: 4px;
     padding-bottom: 4px;
     text-align:left;
@@ -230,34 +234,49 @@ img.tabel__picture2{
 #fuwu_a:hover,#shiming_a:hover{
     color:rgb(255,255,255);
 }
-/* 图片效果
-img.card-conts{
-    transition: 1.5s;
-}
-img:hover.card-conts{
-    filter: opacity(60);
-    -moz-opacity:0.6;
-    background-color: rgba(128,128,128,0.3);
-    opacity: 0.6;
-} */
+
 #card1{
     width: 410px;
     height: 260px;
     background-image: url(../img/ae4b69d6db75748539b997410c24952e.png);
     background-repeat: no-repeat;
     display: inline-block;
+    position: relative;    
 }
-#card1:hover{
+#card2{
+    width: 410px;
+    height: 260px;
+    background-image: url(../img/6dc2fb81db06ff0c679f6443634368f6.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;    
+}
+#card3{
+    width: 410px;
+    height: 260px;
+    background-image: url(../img/398fa772afedf0dfcbf5a96b78092889.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;    
+}
+
+#card1:hover,#card2:hover,#card3:hover{
     opacity:0.7;
 
 }
-#card1 span{
-    position: relative;
+#card1 span,#card2 span,#card3 span{
+    position: absolute;
     left: 160px;
     top: 130px;
     font-size: 25px;
     color: white;
     font: bold;
+    transition: 0;
+}
+#card1:hover span,#card2:hover span,#card3:hover span{
+    font-size:20px;
+    top: 100px;
+    left:170px;
 }
 #shiming_tabal{
     width: 1280px;
@@ -265,14 +284,36 @@ img:hover.card-conts{
 }
 
 
+#card1:hover p.case1,#card2:hover p.case1,#card3:hover p.case1{
+    visibility: visible;
+    display: block;  
+    left: 170px;  
+    width:75px;
+}
 
-
-
-
-#shiming_tabel td{
-    width:33%;
-    padding-left: 5px;
-    padding-right: 5px;
+#card1  p.case1,#card2  p.case1,#card3  p.case1{
+    visibility: hidden;
+    position: absolute;
+    left: 200px;
+    top: 130px;
+    background-color: white;
+    width: 15px;
+    height: 2px;
+    transition: all 0.2s; 
+}
+#card1 p.case2,#card2 p.case2,#card3 p.case2{
+    visibility: hidden;
+    position: absolute;
+    top:240px;
+    left: 140px;
+    color: white;
+    font: 12px;
+    transition: all 0.2s;
+}
+#card1:hover p.case2,#card2:hover p.case2,#card3:hover p.case2{
+    visibility: visible;
+    display: block;
+    top:140px;
 }
 /* 导航栏样式 */
 
