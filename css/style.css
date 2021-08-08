@@ -21,15 +21,18 @@ a {
 }
 
 #daohanglan,
-#banner
+#banner,
+#quyuneirong
 {
     height: 100%;
     width: 100%;
+    /* border: 1px solid red; */
 }
 .container{
     width: 1280px;
     height: 100px;
     margin:0px auto;
+    /* border: 1px solid black; */
 }
 /* logo */
 #logo{
@@ -428,7 +431,7 @@ img:hover.card-conts{
 #daohanglan .after .lihover div{
     visibility: visible;
     display: block;    
-    transition: all 1s; 
+    transition: all 0.5s; 
 }
 
 #daohanglan .after li div{
@@ -444,4 +447,110 @@ img:hover.card-conts{
     width: 100%;
     height: 100%;
     overflow: hidden;
+}
+
+/* 区域内容样式 */
+
+#quyuneirong .container{
+    height: 720px;
+    width: 100%;
+    background-color: #2F2725;
+    display: inline-block;
+}
+
+#quyuneirong .quyuleft{
+    width: 36%;
+    height: 720px;
+
+}
+
+#quyuneirong .quyuleft a{
+    color: #8E8E8E;
+    height: 180px;
+}
+#quyuneirong .quyuleft h3{
+    display: inline-block;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 50px 140px 5px 200px;   
+    position: relative;
+    width: 100%;
+}
+#quyuneirong .quyuleft li{
+    display: inline-block;
+    height: 180px;
+}
+#quyuneirong .quyuleft p{
+    display: inline-block;
+    margin: 10px 140px 5px 200px;
+    width: 100%;   
+}
+
+#quyuneirong .quyuleft img{
+    display: none;
+    margin: 10px 200px 5px 200px;
+}
+
+#quyuneirong .quyuleft a:hover img{
+    display: inline;
+}
+
+#quyuneirong .quyuleft span{
+    background-color: #25A266;
+    width: 2px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 20px;
+    transition: all .2s;
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    visibility: hidden;
+}
+
+
+#quyuneirong .quyuleft a:hover span{
+    visibility: visible;
+    transform: translateX(15px);
+}
+
+#quyuneirong .quyuright{
+    width: 64%;
+    height: 720px;
+    position: relative;
+}
+
+#quyuneirong .quyuright .quyucontent{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+}
+
+#quyuneirong .quyuright .quyucontent1{
+    background-image: url(../img/123ac3ac5b0f2cfb62f3738885648193.jpeg);
+}
+
+#quyuneirong .quyuright .quyucontent2{
+    background-image: url(../img/3c6e3f94db657d41d259d3f62ed11d99.png);
+}
+
+#quyuneirong .quyuright .quyucontent3{
+    background-image: url(../img/180dd8c2384058a2cea5792b2b3e021d.jpeg);
+}
+
+#quyuneirong .quyuright .quyucontent4{
+    background-image: url(../img/2fef55cb4c97dbabb9469a059b91090c.png);
+}
+
+#quyuneirong .quyuright .quyutext{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    width: 70%;
+    line-height: 200%;
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
 }
