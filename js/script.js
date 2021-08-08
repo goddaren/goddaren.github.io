@@ -89,5 +89,35 @@ function dhlbgc(){
     container[0].classList.remove("containerhover");
     daohanglanbefore[0].style.display="block";
     daohanglanafter[0].style.display="none";
+}
 
+function qyon(num){
+    var quyuleft=document.getElementsByClassName("quyuleft")[0];
+    var quyuli=quyuleft.querySelectorAll("li");
+    for(var i=0;i<quyuli.length;i++){
+        quyuli[i].style.color="#8E8E8E";
+    }
+    quyuli[num].style.color="white";
+    var span=quyuli[num].querySelector("span");
+
+    var quyuright=document.getElementsByClassName("quyuright")[0];
+    quyudiv=quyuright.querySelectorAll("div");
+    for(var i=0;i<quyudiv.length;i++){
+        quyudiv[i].style.display="none";
+    }
+    quyudiv[num].style.display="block";
+}
+
+var n=0;
+
+function qyoff(num){
+    var quyuleft=document.getElementsByClassName("quyuleft")[0];
+    var quyuli=quyuleft.querySelectorAll("li");
+    var span=quyuli[num].querySelector("span");
+    span.style.display="none";
+    n=num;
+    setTimeout(function(){var quyuleft=document.getElementsByClassName("quyuleft")[0];
+    var quyuli=quyuleft.querySelectorAll("li");
+    var span=quyuli[n].querySelector("span");
+    span.style.display="inline-block";},50);
 }
