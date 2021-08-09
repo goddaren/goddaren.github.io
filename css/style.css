@@ -567,7 +567,7 @@ img.tabel__picture2{
 }
 
 #quyuneirong .quyuright .quyucontent{
-
+    display: none;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -575,6 +575,7 @@ img.tabel__picture2{
 }
 
 #quyuneirong .quyuright .quyucontent1{
+    display: block;
     background-image: url(../img/123ac3ac5b0f2cfb62f3738885648193.jpeg);
 }
 
